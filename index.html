@@ -57,7 +57,7 @@
                         <div class="col-12">
                             <div class="footer-copyright-social">
                                 <div class="footer-copyright">
-                                    <p class="text-white mb-0">&copy; <?php echo date("Y") ?> <span class="text-danger"><svg class="h-4 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:inline-block;width:1rem;height:1rem;vertical-align:-.125rem"><path fill="currentColor" d="M21.7 6.4V4.2h-2V1.9H15v2.3h-2.1v2.2h-1.8V4.2H9V1.9H4.3v2.3H2.2v2.2H.4v4.5h1.8v2.2H4v2.2h1.8v2.3h2v2.2h2.4V22h3.6v-2.2h2.3v-2.2h2.1v-2.3H20v-2.2h1.7v-2.2h1.9V6.4z"></path></svg></span> <span>Arthur Immanuel Sidjabat</span></p>
+                                    <p class="text-white mb-0">&copy; <span id="copyrightYear"></span> <span class="text-danger"><svg class="h-4 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:inline-block;width:1rem;height:1rem;vertical-align:-.125rem"><path fill="currentColor" d="M21.7 6.4V4.2h-2V1.9H15v2.3h-2.1v2.2h-1.8V4.2H9V1.9H4.3v2.3H2.2v2.2H.4v4.5h1.8v2.2H4v2.2h1.8v2.3h2v2.2h2.4V22h3.6v-2.2h2.3v-2.2h2.1v-2.3H20v-2.2h1.7v-2.2h1.9V6.4z"></path></svg></span> <span>Arthur Immanuel Sidjabat</span></p>
                                 </div>
                             </div>
                         </div>
@@ -71,6 +71,6 @@
         <script type="text/javascript" src="./assets/scripts/bootstrap.min.js" id="main-js" defer></script>
         <link rel="preload" href="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" as="script">
         <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>WebFont.load({google: {families: ['Roboto+Mono:ital,wght@0,300;1,300&display=swap']}});</script>
+        <script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("copyrightYear").textContent=new Date().getFullYear()});WebFont.load({google: {families: ['Roboto+Mono:ital,wght@0,300;1,300&display=swap']}});</script>
     </body>
 </html>
